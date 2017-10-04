@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane fx:id="stackPane" styleClass="mainContainer" stylesheets="/css/style.css">
+         <children>
+            <SplitPane dividerPositions="0.6917808219178082" prefHeight="768.0" prefWidth="1024.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ScrollPane fx:id="scrollPane" fitToWidth="true" layoutX="205.0" layoutY="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <HBox alignment="CENTER" spacing="8.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa:" />
+                                    <TextField fx:id="textFieldName" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="49.0" prefWidth="249.0" spacing="8.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Link:" />
+                                    <TextField fx:id="textFlowLink" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" spacing="8.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Haslo:" />
+                                    <TextField fx:id="textFlowPassword" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                                 </padding>
+                              </HBox>
+                              <Button fx:id="btnAddPassword" mnemonicParsing="false" onMouseClicked="#addNewPassword" text="Dodaj" />
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="20.0" />
+         </padding>
+      </StackPane>
+   </children>
+</AnchorPane>
